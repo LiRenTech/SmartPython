@@ -1,0 +1,63 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="count" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyChainedComparisonsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoreConstantInTheMiddle" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="3.7" />
+            <item index="1" class="java.lang.String" itemvalue="3.10" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E722" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N803" />
+          <option value="N806" />
+          <option value="N802" />
+          <option value="N813" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="dict.iteritems" />
+          <option value="str.decode" />
+          <option value="str.__setitem__" />
+          <option value="x2" />
+          <option value="p1" />
+          <option value="int.*" />
+          <option value="list.*" />
+          <option value="turtle.setup" />
+          <option value="tuple.*" />
+          <option value="urllib.*" />
+          <option value="dict.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
