@@ -1,15 +1,19 @@
-# -*- encoding: utf-8 -*-
-"""
-PyCharm 014 setOption
-2022年05月12日
-by littlefean
-"""
-from typing import *
+s1 = {1, 2, 3}
+s2 = {2, 3, 4}
+# print(s1 + s2)  # bug
 
+print(s1 & s2)  # 与 Tom & Jerry
+print(s1 | s2)  # 或
+print(s1 ^ s2)  # 非 shit + 6 = ^
 
-def main():
-    return None
+print(s1 and s2)
+print(s1 or s2)
+print(not s2)
+print(not s1)
+print(s1.difference(s2))
+while s1:
+    print(s1)
+    s1.pop()
 
-
-if __name__ == "__main__":
-    main()
+s3: set
+# 如何实现一个有序集合
