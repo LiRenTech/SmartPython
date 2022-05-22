@@ -2,6 +2,7 @@ import math
 
 arr = [
     float("inf"),
+    float("-inf"),
     -float("inf"),
     -----------------------------float("inf"),
 
