@@ -33,3 +33,11 @@ print("----")
 
 # 关于无穷的一些运算
 print(float("INF") == float("INF") + 1)
+
+arr = [1, 2, 4, 7, 2, 6, 2, 5]
+res = float("-INF")
+for i, n in enumerate(arr):
+    if n > res:
+        res = n
+print(res)
+
