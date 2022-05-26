@@ -8,11 +8,10 @@ for i in range(10):
     print(heapq.heappop(h))  # 每次弹出的时候都会维护一下小顶
     print(h)
 
-
 #
 # https://leetcode.cn/problems/qn8gGX/
 
 
 # 序列比较默认比较的是第一个元素
 
-
+print(heapq.nlargest(2, [1, 2, 3, 4, 5, 3, 2, 1]))
