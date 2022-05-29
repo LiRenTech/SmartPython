@@ -21,7 +21,7 @@ print(float("INF") == math.inf)
 print(float("INF") is math.inf)
 print(id(float("INF")), id(math.inf))
 
-arr = [math.inf, math.inf, float("INF"), float("inF"), float("INF")]
+arr = [math.inf, math.inf, float("INF"), float("inF"), -float("-INF")]
 
 print("----")
 for obj in arr:

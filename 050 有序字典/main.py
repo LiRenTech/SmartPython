@@ -18,3 +18,9 @@ print(o)
 
 # 3.7 字典和orderedDict一样有顺序了
 
+
+# from sortedContainers import SortedDict
+# 2022年5月28日 看力扣杯困难题发现的   这他娘的是第三方库
+
+
+
