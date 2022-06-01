@@ -1,6 +1,9 @@
 from time import time
 from typing import *
 
+# 不知道怎么起名字可以看看这个网站
+# https://unbug.github.io/codelf/
+
 # 单个字母变量的通常的含义
 
 a: int
