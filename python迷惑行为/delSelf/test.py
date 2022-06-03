@@ -1,9 +1,11 @@
-def add(a, b):
-    return None
+# -*- encoding: utf-8 -*-
+"""
+PyCharm test
+2022年06月02日
+by littlefean
+"""
+from typing import *
 
-
-print(type(int(5)))
-print(type(int))
-print(type(type(type)))
-
-print(5 + 5)
+if __name__ == "__main__":
+    # main()
+    ...

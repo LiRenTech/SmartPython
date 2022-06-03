@@ -1,0 +1,8 @@
+import builtins
+import 字典额外操作
+from collections import ChainMap
+
+pylookup = ChainMap(locals(), globals(), vars(字典额外操作))
+print(pylookup)
+
+# ?????????????????

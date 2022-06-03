@@ -1,12 +1,14 @@
 import heapq
+from random import randint
 
-h = [i for i in range(10)]
-h.reverse()
+h = [-randint(1, 100) for _ in range(8)]
+print(h)
 heapq.heapify(h)  # 这个函数没有返回值，直接传递列表改变列表
 print(h)
-for i in range(10):
-    print(heapq.heappop(h))  # 每次弹出的时候都会维护一下小顶
-    print(h)
+while h:
+    a = -heapq.heappop(h)
+    print(a)
+    # print(h)
 
 #
 # https://leetcode.cn/problems/qn8gGX/

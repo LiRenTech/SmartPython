@@ -11,3 +11,5 @@ priQue.put([7, "李"])
 print(priQue.queue)
 priQue.put([5, "周"])
 print(priQue.queue)
+while priQue:
+    print(priQue.get())
