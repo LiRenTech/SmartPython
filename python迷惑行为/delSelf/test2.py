@@ -1,14 +1,16 @@
 # -*- encoding: utf-8 -*-
 """
-PyCharm test
+PyCharm test2
 2022年06月04日
 by littlefean
 """
 from typing import *
+import os
 
 
 def main():
-    print("hello world")
+    os.system("python test.py")
+    os.system("test.py")
     return None
 
 
