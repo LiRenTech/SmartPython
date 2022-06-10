@@ -7,10 +7,7 @@ def test():
     for n in range((len(doSomeThings) + 1) ** 2):
         print(bin(n))
         string = bin(n)[2:]
-        things = []
-        for i, char in enumerate(string):
-            if char == "1":
-                things.append(doSomeThings[i])
+        things = [doSomeThings[i] for i, char in enumerate(string) if char == "1"]
         print("一边".join(things))
 
 

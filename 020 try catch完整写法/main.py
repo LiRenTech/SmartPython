@@ -1,16 +1,17 @@
+import traceback
+
+
 def f():
     print(1 / 0)
     ...
 
+
 # 范围逐渐扩大原理
 
-import traceback
 
 try:
     f()
-except ValueError:
-    ...
-except NameError:
+except (ValueError, NameError):
     ...
 except Exception as e:  # 如果写成其他的样子，会有警告
     print(e)
@@ -20,10 +21,8 @@ else:
 finally:
     ...
 
-
 for i in range(10):
     print(i)
-
 
 # heapq内置库代码
 # Short-cut for n==1 is to use max()

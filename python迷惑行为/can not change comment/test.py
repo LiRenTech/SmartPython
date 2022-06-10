@@ -17,7 +17,6 @@ def func():
     """
     ...
     ...
-    pass
     print("hello")
 
 

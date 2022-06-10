@@ -21,6 +21,9 @@ class Node:
     __repr__ = __str__
 
 
+from typing import *
+
+
 def main():
     head = Node(1)
     head.next = Node(5)
@@ -32,6 +35,11 @@ def main():
     print(head)
     for item in head:
         print(item)
+
+    t: Tuple[int, int] = 1, 5
+    t: [int, int] = 1, 5
+    a, b = t
+    
     ...
 
 

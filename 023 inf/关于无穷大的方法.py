@@ -18,13 +18,13 @@ arr = [
 print(math.inf)
 print(type(math.inf))
 print(float("INF") == math.inf)
-print(float("INF") is math.inf)
+# print(float("INF") is math.inf)
 print(id(float("INF")), id(math.inf))
 
-arr = [math.inf, math.inf, float("INF"), float("inF"), -float("-INF")]
+arr2 = [math.inf, math.inf, float("INF"), float("inF"), -float("-INF")]
 
 print("----")
-for obj in arr:
+for obj in arr2:
     print("\t", id(obj))
 print("----")
 # math库里的对象都是一个地址，但是float直接生成出来的都是不一样的
@@ -34,9 +34,9 @@ print("----")
 # 关于无穷的一些运算
 print(float("INF") == float("INF") + 1)
 
-arr = [1, 2, 4, 7, 2, 6, 2, 5]
+arr3 = [1, 2, 4, 7, 2, 6, 2, 5]
 res = float("-INF")
-for i, n in enumerate(arr):
+for n in arr3:
     if n > res:
         res = n
 print(res)

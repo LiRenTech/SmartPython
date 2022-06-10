@@ -17,6 +17,7 @@ __ 运算符 __ 运算符 __
 __ 运算符 __ 运算符 __ 运算符 __
 
 """
+
 a = 15
 
 # if a == 15:
@@ -102,7 +103,7 @@ print("不合格") if score < 60 else print("合格") if score in range(101) els
 # if  elif  else 多分支可以简化成一行吗?
 name = "xxx"
 
-if name == "":
+if not name:
     print("空")
 elif name == "张三":
     print("找到人了")

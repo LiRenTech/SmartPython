@@ -4,27 +4,23 @@ PyCharm forforfro
 2022年06月01日
 by littlefean
 """
+
+import contextlib
+import itertools
 from typing import *
 
 
-# 如何跳出多层循环
-# https://blog.csdn.net/m0_50973309/article/details/120990478
 class getOutOfLoop(Exception):
     pass
 
 
 def main():
-    try:
-        for i in range(3):
-            for j in range(3):
-                for k in range(3):
-                    if i == j == k == 1:
-                        raise getOutOfLoop()  # 抛出一个异常，就会跳出所有循环
-                    else:
-                        print(i, j, k)
-    except getOutOfLoop:
-
-        pass
+    with contextlib.suppress(getOutOfLoop):
+        for i, j, k in itertools.product(range(3), range(3), range(3)):
+            if i == j == k == 1:
+                raise getOutOfLoop()  # 抛出一个异常，就会跳出所有循环
+            else:
+                print(i, j, k)
     print('done')
     return None
 
@@ -45,42 +41,30 @@ def main():
 
 def foo():
     def sub_foo():
-        for i in range(9):
-            for j in range(9):
-                for k in range(9):
-                    print("I am trapped, please rescue!")
-                    if k == 2:
-                        return
+        for _, _, k in itertools.product(range(9), range(9), range(9)):
+            print("I am trapped, please rescue!")
+            if k == 2:
+                return
 
     sub_foo()
     print("Freedom!")
 
 
-foo()
-
-#  。。。for else
-for i in range(9):
-    for j in range(9):
-        for k in range(9):
-            print("I am trapped, please rescue!")
-            if k == 2:
-                break
+def forElse():
+    #  。。。for else
+    for _ in range(9):
+        for j in range(9):
+            for k in range(9):
+                print("I am trapped, please rescue!")
+                if k == 2:
+                    break
+            else:
+                continue
+            break
         else:
             continue
         break
-    else:
-        continue
-    break
-print("Freedom!")
-
-# FLAG
-...
-...
-...
-...
-...
-...
-
+    print("Freedom!")
 
 
 if __name__ == "__main__":

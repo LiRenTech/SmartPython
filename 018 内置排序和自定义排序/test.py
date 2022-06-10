@@ -1,6 +1,7 @@
-arr2 = [(1, 2), (2, 2), (5, 0)]
-
 from functools import cmp_to_key
+from random import randint
+
+arr2 = [(1, 2), (2, 2), (5, 0)]
 
 
 def cmp(a, b):
@@ -16,8 +17,6 @@ def cmp(a, b):
         else:
             return 0
 
-
-from random import randint
 
 arr3 = [(randint(1, 100), randint(1, 100)) for _ in range(100)]
 arr3.sort(key=cmp_to_key(cmp), reverse=True)

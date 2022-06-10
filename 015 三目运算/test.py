@@ -11,10 +11,6 @@ else:
 if print("if if"):
     print(111)
 
-
-
-
-
 # 嵌套写法
 score = 83
 if score in range(101):
@@ -29,15 +25,15 @@ print("不合格") if score < 60 else print("合格") if score in range(101) els
 
 from random import random
 
+
 def do():
     ...
+
 
 if random() < 0.5:
     do()
 
 do() if random() < 0.5 else ...
-
-
 
 value = 65
 

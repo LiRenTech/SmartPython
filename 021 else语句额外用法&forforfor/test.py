@@ -1,5 +1,5 @@
 count = 0
-for i in range(3):
+for _ in range(3):
     for ii in range(3):
         for iii in range(3):
             for iiii in range(3):

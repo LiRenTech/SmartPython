@@ -42,4 +42,4 @@ print((1,).__sizeof__())
 print([1].__sizeof__())
 print([1, 2, 3].__sizeof__())
 print("1".__sizeof__())
-print({n for n in range(333)}.__sizeof__())  # 返回的单位是比特
+print(set(range(333)).__sizeof__())

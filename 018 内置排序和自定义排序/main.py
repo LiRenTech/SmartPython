@@ -1,3 +1,5 @@
+from functools import cmp_to_key
+
 arr = [3, 1, 4, 1, 5, 9, 2, 6]
 
 # 区别
@@ -11,7 +13,6 @@ print(arr2)
 arr2.sort(key=lambda item: item[1], reverse=True)
 print(arr2)
 
-from functools import cmp_to_key
 
 def cmp(a, b):
     # return 1 表示 a 应该比 b 大

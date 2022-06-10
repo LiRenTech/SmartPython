@@ -4,7 +4,7 @@ lines = 1
 def run():
     global lines
     cacheLen = lines
-    for i in range(cacheLen):
+    for _ in range(cacheLen):
         lines += lines
 
 

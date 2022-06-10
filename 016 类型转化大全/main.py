@@ -132,7 +132,7 @@ print(dic.values(), type(dic.values()))
 
 print(['a', 'b'] == dic.keys())  # x
 print(('a', 'b') == dic.keys())  # x
-print([1, 2] == [1, 2])  # 对
+# print([1, 2] == [1, 2])  # 对
 
 # 但是你可以这样
 print(list(dic.keys()))

@@ -10,8 +10,7 @@ YELLOW = 0x0e  # yellow.
 
 
 def setColor(color):
-    Bool = ctypes.windll.kernel32.SetConsoleTextAttribute(__std_out_handle, color)
-    return Bool
+    return ctypes.windll.kernel32.SetConsoleTextAttribute(__std_out_handle, color)
 
 
 # setColor(__FOREGROUND_RED | __FOREGROUND_GREEN | __FOREGROUND_BLUE)  # 白色  | 是位运算中的或运算

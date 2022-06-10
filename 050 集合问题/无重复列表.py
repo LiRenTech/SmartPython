@@ -9,13 +9,20 @@ class SetList:
     def add(self, val):
         if val in self.dic:
             return
-        else:
-            self.dic[val] = len(self.lst)
-            self.lst.append(val)
+        self.dic[val] = len(self.lst)
+        self.lst.append(val)
 
     def __iter__(self):
+        """
+
+        :return:
+        """
+        """
         for item in self.lst:
             yield item
+        """
+        # 以上代码直接简化
+        yield from self.lst
 
     def __contains__(self, item):
         return item in self.dic
@@ -37,7 +44,7 @@ class SetList:
             res += str(item)
             if i != len(self.lst) - 1:
                 res += ", "
-        return res + ">"
+        return f"{res}>"
 
     __repr__ = __str__
 

@@ -44,15 +44,13 @@ else:
 # for else 语句是一种python特有的结构
 
 try:
-    a = 15
-    a /= 5
+    a = 15 / 5
 except:
     # 发生错误之后执行代码
     ...
 else:
     # 没有发生错误执行代码
     ...
-
 
 # try:
 #     ...

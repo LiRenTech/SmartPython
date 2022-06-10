@@ -3,11 +3,10 @@ from typing import *
 
 class A:
     def __init__(self):
-        self.val = [i for i in range(100)]
+        self.val = list(range(100))
 
     def __iter__(self):
-        for item in self.val:
-            yield item
+        yield from self.val
 
     def __getitem__(self, arg):
         arr = self.val

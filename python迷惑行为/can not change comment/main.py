@@ -17,7 +17,6 @@ def func():
     """
     ...
     ...
-    pass
     print("hello")
 
 
@@ -28,16 +27,13 @@ def judge():
         if code == 341:
             # 答对了
             print("我的代码没有被修改")
-            ...
         else:
             # 被修改了
             print("我的代码被修改了！")
             import email
-            # email.send(user, password, content)
-            ...
+        ...
     except NameError:
         print("我的函数被改名了或者被删除了！")
-
 
 
 def main():

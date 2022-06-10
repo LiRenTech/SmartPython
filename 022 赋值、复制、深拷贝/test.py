@@ -3,7 +3,8 @@ from random import randint
 from time import perf_counter
 
 string = ""
-for i in range(100_0000):  # 可以随便加下划线，不能连续加两个
+for _ in range(100_0000):
+    # 可以随便加下划线，不能连续加两个
     string += str(randint(0, 9))
     ...
 

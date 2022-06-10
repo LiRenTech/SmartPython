@@ -95,8 +95,7 @@ def comment():
 def robot(oldFunc):
     def newFunc(*args):
         print("started")
-        res = oldFunc(*args)
-        return res
+        return oldFunc(*args)
 
     return newFunc
 

@@ -4,6 +4,8 @@ PyCharm main
 2022年05月23日
 by littlefean
 """
+
+import itertools
 from typing import *
 
 
@@ -14,11 +16,7 @@ def main():
     print(b == c)
 
     # 可以当成坐标用，用于快速判断某一个点是否在某一个区域里
-    s = set()
-    for y in range(10):
-        for x in range(10):
-            v = complex(x, y)
-            s.add(v)
+    s = {complex(x, y) for y, x in itertools.product(range(10), range(10))}
     print(s)
 
     return None
