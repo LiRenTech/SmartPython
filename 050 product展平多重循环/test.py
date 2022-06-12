@@ -4,17 +4,15 @@ PyCharm test
 2022年06月10日
 by littlefean
 """
-from typing import *
-from itertools import product
+
+import itertools
 
 
 def main():
-    count = 0
-    # 三重循环
-    for x, y, z in product(range(5), range(5), range(5)):
+    for x, y, z, i in itertools.product(range(10), range(10), range(10), range(3)):
+        if x == y == 50:
+            break
         print(x, y, z)
-        count += 1
-    print(count)  # 5 * 5 * 5
 
     return None
 

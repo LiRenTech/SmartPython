@@ -1,18 +1,15 @@
 from random import random
 
-c = 1
+a = 1
+import sys
+sys.setrecursionlimit(1000000)
 
 
 def f():
-    global c
-    c *= 2
-    print(c)
-    return f if random() < 0.5 else f()
+    global a
+    a *= 2
+    print(a)
+    return f if random() < 0.00001 else f()
 
 
-# 等效写法
-# f()
-# f()
-# f()
-
-f()()()
+f()

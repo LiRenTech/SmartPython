@@ -9,14 +9,10 @@
 # print(a3)
 
 N = 800
-string = ""
+string = "".join(f"a{i} = []\n" for i in range(N))
 for i in range(N):
-    string += f"a{i} = []\n"
-for i in range(N):
-    if i == 0:
-        string += f"a{i}.append(a{N - 1})\n"
-    else:
-        string += f"a{i}.append(a{i - 1})\n"
+    string += f"a{i}.append(a{N - 1})\n" if i == 0 else f"a{i}.append(a{i - 1})\n"
+
 for i in range(N):
     string += f"print(a{i})\n"
 
