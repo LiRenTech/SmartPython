@@ -1,55 +1,42 @@
-from array import array
-from time import perf_counter
-from random import randint
-
-# print(lst)
-# print(arr)
-
-# 测试随机修改
-N = 1000000
+# -*- encoding: utf-8 -*-
+"""
+PyCharm test
+2022年06月17日
+by littlefean
+"""
+from typing import *
 
 
-def test1():
-    lst = list(range(100))
-    arr = array("i", lst)
-    t1 = perf_counter()
-
-    for _ in range(N):
-        lst[randint(0, len(lst) - 1)] = 666
-
-    t2 = perf_counter()
-
-    for _ in range(N):
-        arr[randint(0, len(arr) - 1)] = 666
-
-    t3 = perf_counter()
-    print(t2 - t1, t3 - t2)
+def dfs(n):
+    if n < 0:
+        return
+    print(">", n)
+    dfs(n - 1)
+    print("<", n)
 
 
-def test2():
-    """
-    append
-    """
-    arr1 = array("i")
-
-    t1 = perf_counter()
-    lst1 = [1 for _ in range(N)]
-    t2 = perf_counter()
-    for _ in range(N):
-        arr1.append(1)
-    t3 = perf_counter()
-    print(lst1.__sizeof__())
-    print(arr1.__sizeof__())
-    print(t2 - t1, t3 - t2)
+class DeepException(BaseException):
+    ...
 
 
-def test3():
-    t1 = perf_counter()
-    arr = array("i", range(N))
-    t2 = perf_counter()
-    lst = list(range(N))
-    t3 = perf_counter()
-    print(t2 - t1, t3 - t2)
+def dfs2(n):
+    if n < 0:
+        raise DeepException
+    print(">>", n)
+    dfs2(n - 1)
+    print("<<", n)
 
 
-test3()
+def main():
+    try:
+        dfs2(10)
+    except DeepException:
+        ...
+
+    # 问题，压栈的那些dfs2去哪里了？直接消失了？
+
+    return None
+
+
+if __name__ == "__main__":
+    main()

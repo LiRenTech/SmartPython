@@ -9,7 +9,7 @@ import os
 
 
 def main():
-    os.system("python test.py")
+    os.system("python testArray.py")
     os.system("test.py")
     return None
 
