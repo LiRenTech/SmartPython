@@ -1,19 +1,13 @@
 # -*- encoding: utf-8 -*-
 """
-PyCharm test
+PyCharm 枚举类型
 2022年07月01日
 by littlefean
 """
 from typing import *
 
 
-class A:
-    ...
-
-
 def main():
-    # 查看类可以有多少个魔术方法
-    a = A()
     return None
 
 

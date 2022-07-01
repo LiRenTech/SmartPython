@@ -1,12 +1,3 @@
-from collections import namedtuple
-
-# 两种方法来给 namedtuple 定义方法名
-User = namedtuple('User', ['name', 'age', 'id'])
-user = User('tester', '22', '464643123')
-
-print(user)
-# User(name='tester', age='22', id='464643123')
-
 # *--------------------------------
 # https://www.manongdao.com/article-2068272.html
 from enum import IntEnum
@@ -25,3 +16,10 @@ class StudentEnum(IntEnum):
 print(StudentEnum.NAME)
 print(s[StudentEnum.NAME])
 isinstance(StudentEnum.NAME, int)
+
+
+class TestEnum(IntEnum):
+    AIR = 0
+    DIRT = 1
+    ROCK = 2
+    GRASS = "3"  # 没有起到检查的作用

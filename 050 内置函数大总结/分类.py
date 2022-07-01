@@ -80,6 +80,7 @@ allList = [
     hash,
     memoryview,
     set,
+    quit
 
 ]
 
