@@ -79,6 +79,16 @@ def bfs(node: "Node"):
     ...
 
 
+class A:
+    def __init__(self):
+        self.val = 100
+        ...
+
+    @classmethod
+    def a(cls) -> Type["A"]:
+        return cls
+
+
 def main():
     from inspect import signature
 
