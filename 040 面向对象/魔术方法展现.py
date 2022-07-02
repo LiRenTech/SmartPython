@@ -35,6 +35,10 @@ def main():
     def __abs__(self):
     def __copy__(self):
     def __getattr__(self, item):
+    def __format__(self, format_spec):
+    def __deepcopy__(self, memodict=None):
+    def __round__(self, n=None):
+    def __pow__(self, power, modulo=None):
 
     def __sizeof__(self):
     
@@ -138,30 +142,28 @@ def main():
     
     
     def __missing__(self, key):
-    def __round__(self, n=None):
     def __delslice__(self, i, j):
-    def __deepcopy__(self, memodict=None):
-    def __delete__(self, instance):
     def __instancecheck__(self, instance):
     
+    
+    def __get__(self, instance, owner):
+    def __set__(self, instance, value):
+    def __delete__(self, instance):
+    
+    def __new__(cls, *args, **kwargs):
     
     
     def __setstate__(self, state):
     def __subclasscheck__(self, subclass):
-    def __get__(self, instance, owner):
-    def __new__(cls, *args, **kwargs):
     def __prepare__(cls, name, bases):
-    def __set__(self, instance, value):
     def __setattr__(self, key, value):
     def __setitem__(self, key, value):
     def __class_getitem__(cls, item):
-    def __format__(self, format_spec):
     def __init_subclass__(cls, **kwargs):
     def __mro_entries__(self, bases):
     def __reduce_ex__(self, protocol):
     def __dir__(self) -> Iterable[str]:
     def __setslice__(self, i, j, sequence):
-    def __pow__(self, power, modulo=None):
     def __set_name__(self, owner, name):
     def __class__(self: __rpow__) -> Type[__rpow__]:
     def __aexit__(self, exc_type, exc_val, exc_tb):

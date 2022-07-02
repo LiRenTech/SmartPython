@@ -89,8 +89,8 @@ class D:
         self.a = 1
         self.b = 1
 
-d = D(123)
 
+d = D(123)
 
 """
 概念区分
@@ -221,6 +221,10 @@ class Board:
         if type(name) == str:
             self._boardName = name
 
+    @boardName.deleter
+    def boardName(self):
+        del self._boardName
+
     def setBoard(self, value, x, y):
         if type(x) == type(y) == int and x in range(19) and y in range(19):
             self.__board[y][x] = value
@@ -267,3 +271,37 @@ p[?]      getitem
 p[?] = ?  setitem
 del p[?]  delitem
 """
+
+"""
+描述器，接管属性的增删改查操作
+
+"""
+
+
+class Age:
+    def __set__(self, instance, value):
+        ...
+
+    def __get__(self, instance, owner):
+        ...
+
+    def __delete__(self, instance):
+        ...
+
+
+class People:
+    age = Age()
+
+    def __init__(self, name, age):
+        self.age = age
+        self.name = name
+
+
+"""
+使用类实现装饰器
+
+
+"""
+
+
+
