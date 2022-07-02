@@ -13,6 +13,7 @@ print(mpt)
 
 print(mpt[2])  # 保留了查询的功能
 
+
 # 字典key套字典？
 
 # a = {
@@ -21,3 +22,15 @@ print(mpt[2])  # 保留了查询的功能
 # print(a)
 # s = {mpt}
 # 套个der啊，不能套
+
+
+class M:
+    count = 0
+
+    def __init__(self):
+        self.name = 15
+
+
+print(type(M.__dict__))
+# 类的属性就是一种映射代理类型
+print(type(M().__dict__))
