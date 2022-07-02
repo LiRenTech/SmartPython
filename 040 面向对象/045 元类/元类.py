@@ -12,6 +12,7 @@ def say(self):
 
 
 # type(类名，继承关系，属性)
+
 Person = type("Person", (), {"count": 0, "say": say})
 
 p = Person()

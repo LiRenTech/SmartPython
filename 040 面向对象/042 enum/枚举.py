@@ -23,3 +23,8 @@ class TestEnum(IntEnum):
     DIRT = 1
     ROCK = 2
     GRASS = "3"  # 没有起到检查的作用
+
+# 枚举的用途在于相当于很简洁的声明了常量
+# TestEnum.AIR = 15  # 修改会报错
+
+# 中键点击去之后还会有更多的东西
