@@ -25,8 +25,6 @@ def main():
 
     # 洗牌序列
     print(shuffle(list(range(100))))
-
-
     return None
 
 
