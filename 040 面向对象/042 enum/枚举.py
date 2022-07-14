@@ -1,5 +1,7 @@
 # *--------------------------------
 # https://www.manongdao.com/article-2068272.html
+
+# 3.4 新加的
 from enum import IntEnum
 
 NAME, AGE, SEX, EMAIL = range(4)

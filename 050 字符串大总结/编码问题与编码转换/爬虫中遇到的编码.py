@@ -61,7 +61,14 @@ def main():
     print(chr(65))
     print(chr(97))
 
-    ""
+    print("这拆成是".encode())
+
+    # ISO-8859-1 编码
+    # 向下兼容ASCII
+    print(0xff)
+    print(0x7F)
+
+    # gbk 国标，扩展
     return None
 
 

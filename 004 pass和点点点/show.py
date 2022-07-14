@@ -46,6 +46,14 @@ def main():
 
     print(id(...) == id(Ellipsis))
     # print(id(...) == id(ellipsis))  # 没有小写开头的东西了，因为是单例了，虽然pycharm里这个单词还会变蓝
+
+    print(type(...))
+    print(type(Ellipsis))
+    print(Ellipsis.__class__)
+    print(Ellipsis.__class__())
+    print(Ellipsis.__class__.__name__)
+    print(Ellipsis.__class__.__bases__)
+    print(Ellipsis.__class__.__class__)
     return None
 
 

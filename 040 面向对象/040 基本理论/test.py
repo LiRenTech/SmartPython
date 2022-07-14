@@ -24,7 +24,6 @@ def main():
     d = type.__class__
     print(d)
     print(A().__class__.__name__)
-
     return None
 
 

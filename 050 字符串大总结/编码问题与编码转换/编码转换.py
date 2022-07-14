@@ -21,6 +21,7 @@ def main():
     print("this is english".encode("utf-8"))
     # print("这里是中文".encode("ascii"))  # 这个不能转化，因为ascii的范围比较小
     print("这里是中文".encode("utf-8"))
+    print("这里是jabc".encode("utf-8"))
     print("这里是中文".encode("gbk"))
 
     return None
