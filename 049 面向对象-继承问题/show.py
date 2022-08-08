@@ -17,6 +17,7 @@ class Person:
     def test(self):
         # if date == self.birthday:
         #     self.age += 1
+        # todo sdlkjflsksldkfjaslkdjl
         ...
 
     def say(self):
@@ -83,6 +84,8 @@ class Guard(Staff):
 
 
 def main():
+    ...
+    # todo klsdjflksdj
     return None
 
 

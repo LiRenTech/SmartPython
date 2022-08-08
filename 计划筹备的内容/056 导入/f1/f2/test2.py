@@ -1,10 +1,15 @@
 # -*- encoding: utf-8 -*-
 """
-PyCharm main
-2022年05月23日
+PyCharm test
+2022年07月27日
 by littlefean
 """
 from typing import *
+
+
+def func():
+    print("....")
+    ...
 
 
 def main():
