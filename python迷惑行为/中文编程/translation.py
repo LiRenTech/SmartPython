@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 """
 PyCharm translation
+此文件对中文编程的代码字符串进行关键字和一些中文符号的替换
 2022年08月14日
 by littlefean
 """

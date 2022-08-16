@@ -16,7 +16,3 @@ class 字典(dict):
 
 class 列表(list):
     追加 = list.append
-
-啊= 列表()
-啊.追加(2123)
-打印(啊)

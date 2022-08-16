@@ -1,3 +1,7 @@
+"""
+全中文编程的翻译运行主文件
+"""
+
 from translation import trans
 
 with open("a.pycn", encoding="utf-8") as f:

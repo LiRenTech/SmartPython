@@ -6,8 +6,11 @@ by littlefean
 """
 from typing import *
 import sys
+import gc
 
 sys.setrecursionlimit(5001)
+print(gc.get_threshold())
+gc.set_threshold(700, 10, 5)
 
 
 def main():
