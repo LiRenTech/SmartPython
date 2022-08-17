@@ -15,8 +15,7 @@ class A:
 
 endl = "\n"
 
-a = A(1).val(2).val(3).val(4).val(5).val(6).val(7)
-a << 5 << 5 << endl
-print(a)
+cout = A(1).val(2).val(3).val(4).val(5).val(6).val(7)
+cout << 5 << 5 << endl
 
 

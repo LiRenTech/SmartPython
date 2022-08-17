@@ -10,10 +10,10 @@ class A:
 
     def __getitem__(self, arg):
         arr = self.val
-        if type(arg) is tuple:
+        if isinstance(arg, tuple):
             for item in arg:
                 self.__getitem__(item)  # todo
-        elif type(arg) is (int, slice):
+        elif isinstance(arg, (int, slice)):
             print(f"self.val[{arg}]")
             return self.val[arg]
 
