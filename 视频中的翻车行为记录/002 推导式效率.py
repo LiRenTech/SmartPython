@@ -48,6 +48,13 @@ def main():
     # problem(reverse=False)
     problem(reverse=True)
 
+    # 第二种测试方法
+    def func():
+        ...
+
+    from timeit import timeit
+    timeit(func, number=10000)
+
     # 真的快慢，还是要看底层，看C源码，看逻辑，还有列表扩容机制
 
     return None
