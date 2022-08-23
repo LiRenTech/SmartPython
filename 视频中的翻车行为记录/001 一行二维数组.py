@@ -46,16 +46,19 @@ def showType():
         type(iter([1, 2])),  # list_iterator
         type(iter((1, 2, 3))),
         type(iter({1, 2, 3})),
-        type((i ** 0.5 for i in range(5))),
+        type(i ** 0.5 for i in range(5)),
         type(i ** 0.5 for i in range(5)),  # 中括号去掉
     )
 
 
 def main():
-    g = (i for i in range(10))
-    print(list(g))
-    g.send(12)
-    g.close()
+    # showList()
+    # g = iter(range(10))
+    # showType()
+    iterTest()
+    # print(list(g))
+    # g.send(12)
+    # g.close()
     # g.throw(123)
     return None
 

@@ -12,7 +12,7 @@ def myStrHash(string: str) -> int:
 def func():
     """
     这个函数巴拉巴拉
-    我是一个小傻逼
+    我是一个***
     :return:
     """
     ...

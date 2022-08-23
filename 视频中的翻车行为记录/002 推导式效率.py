@@ -8,52 +8,40 @@ PyCharm 002 推导式效率
 by littlefean
 """
 from typing import *
-from time import perf_counter
+from time import *
 
 
-def code1():
-    arr = []
-    for i in range(1000):
-        if i % 7 == 0:
-            continue
-        arr.extend((i, j) for j in range(1000) if j % 55 != 0)
-
-
-def code2():
-    s = {i for i in range(1000000) if i % 7 != 0}
-
-
-def problem(reverse=False):
-    c1: float
-    c2: float
-    if reverse:
-        t1 = perf_counter()
-        code1()
-        t2 = perf_counter()
-        code2()
-        t3 = perf_counter()
-        print(t2 - t1, t3 - t2)
-    else:
-        t1 = perf_counter()
-        code2()
-        t2 = perf_counter()
-        code1()
-        t3 = perf_counter()
-        print(t3 - t2, t2 - t1)
-    ...
+def myAll(arr):
+    for item in arr:
+        if not bool(item):
+            return False
+    return True
 
 
 def main():
     # 实际上连续执行两段还可能是有问题的
-    # problem(reverse=False)
-    problem(reverse=True)
+    # arr = list(range(1_0000_0000))
+    # print("start")
+    # t1 = perf_counter_ns()
+    #
+    # myAll(arr)
+    #
+    # t2 = perf_counter_ns()
+    #
+    # all(arr)
+    #
+    # t3 = perf_counter_ns()
+    #
+    # d1 = t2 - t1
+    # d2 = t3 - t2
+    # print(d1, d2,  d1 / d2)
 
     # 第二种测试方法
     def func():
-        ...
+        myAll(list(range(1_0000_0000)))
 
     from timeit import timeit
-    timeit(func, number=10000)
+    print(timeit(func))
 
     # 真的快慢，还是要看底层，看C源码，看逻辑，还有列表扩容机制
 

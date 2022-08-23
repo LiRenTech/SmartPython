@@ -2,18 +2,32 @@
 """
 PyCharm 005 函数注解
 0分22秒 函数注释，是三引号的东西
-9分27秒 a:int 不是空值
+如何获取文档注释
+如何书写文档注释
+
 2022年08月17日
 by littlefean
 """
 from typing import *
 
 
+def func(a: int, b: float):
+    """
+    vege hjuu ui gjufmdede
+    Args:
+        a: sdfasdf
+        b: dsfasdds
+
+    Returns: fj
+
+    """
+    ...
+
+
 def main():
-    a: int
-    print(type(a))
-    # 一个变量名，指向一个内存地址
-    # 这个变量名还没有指向一块内存地址
+    # 注释
+    print(func.__doc__)
+    func(1, 1)
 
     return None
 

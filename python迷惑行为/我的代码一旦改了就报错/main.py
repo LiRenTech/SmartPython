@@ -4,6 +4,12 @@
 如果检测方法只能在这个函数里面呢？===>非常难以解决
 
 """
+import hashlib
+
+
+def a():
+    aa = "sdfassdfsdfa"
+    print(eval(f"0x{str(hashlib.sha256(aa.encode()).hexdigest())}") % 1000)
 
 
 def func():
