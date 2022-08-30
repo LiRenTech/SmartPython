@@ -8,11 +8,14 @@ from typing import *
 
 
 def main():
-    a = 10
-    for i in range(10):
-        a += i * 100
-        print(a)
-    # print(a)
+    def f(n):
+        return (-1) ** (n * (n - 1) / 2)
+
+    res = ""
+    for i in range(1, 10000):
+        res += "-" if f(i) < 0 else "+"
+    print(res)
+
     return None
 
 
