@@ -6,7 +6,8 @@ def student(name, age):
 
     def say(): print(f"我叫{name}，我{age}岁")
 
-    def obj(): ...  # 用一个空函数对象表示实例化出来的对象
+    def obj():
+        ...  # 用一个空函数对象表示实例化出来的对象
     obj.name = name
     obj.age = age
     obj.addAge = addAge
@@ -21,3 +22,4 @@ s2.say()
 s1.addAge(5)
 s1.say()
 s2.say()
+print(s1.say.__closure__)
