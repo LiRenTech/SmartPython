@@ -16,7 +16,7 @@ import phe
 
 
 def main():
-    print(phe.f())
+    print(phe.f0())
     return None
 
 

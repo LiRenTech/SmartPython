@@ -22,8 +22,9 @@ import sys
 sys.path.insert(0, "../")
 import phe
 
+
 def main():
-    print(phe.f())
+    print(phe.f0())
     return None
 ```
 

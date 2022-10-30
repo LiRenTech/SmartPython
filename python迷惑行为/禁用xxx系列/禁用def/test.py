@@ -30,7 +30,7 @@ for k, v in Function.__dict__.items():
 
 # 发现 函数类 有 __code__内置属性
 print(isPrim.__code__)
-# <code object isPrim at 0x000001744583ADB0, file "D:/LiRen/SmartPython/禁用xxx系列/禁用def/a.py", line 13>
+# <code object isPrim at 0x000001744583ADB0, file "D:/LiRen/SmartPython/禁用xxx系列/禁用def/aaa.py", line 13>
 print(type(isPrim.__code__.__class__))
 print(type(isPrim.__code__))
 print(repr(isPrim.__code__))
