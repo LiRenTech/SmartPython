@@ -1,3 +1,8 @@
+import sys
+
+sys.setrecursionlimit(2147483647)
+
+
 def nbDeco(oldDeco):
     def newDeco(func):
         return oldDeco(oldDeco(func))
@@ -7,7 +12,7 @@ def nbDeco(oldDeco):
 
 nbDeco = nbDeco(nbDeco)  # nbDeco {x2} => {{x2}{x2}}
 nbDeco = nbDeco(nbDeco)  # nbDeco {{{x2}{x2}}} => {{{{x2}{x2}}}{{{x2}{x2}}}}{{{{x2}{x2}}}{{{x2}{x2}}}}
-# nbDeco = nbDeco(nbDeco)
+nbDeco = nbDeco(nbDeco)
 
 
 @nbDeco
