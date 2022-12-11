@@ -1,10 +1,16 @@
 # python技巧系列源码
 
+## 地址
+
 python技巧🐍系列视频的所有代码，个别章节可能包含图片，ppt，导图文件。
 
 - 此系列的b站视频链接 https://space.bilibili.com/480804525/channel/collectiondetail?sid=413538
 - 此项目的github地址：[Littlefean/SmartPython: python小技巧系列源代码——来自b站视频 (github.com)](https://github.com/Littlefean/SmartPython)
 - 此项目的gitee地址：https://gitee.com/littlefean/python-skill-bilibili
+
+## 说明
+
+项目中可能会含有计划录但还没有录的代码内容，这部分内容可能涉及剧透。不太建议看，因为如果你已经看了，再看b站视频可能就没啥意思了 `/* 尤其是迷惑行为 */`，但如果你不经常看b站，经常看github，那就都可以了。
 
 ## 分类
 
@@ -59,6 +65,10 @@ python技巧🐍系列视频的所有代码，个别章节可能包含图片，p
 
 1. 027 两种打印彩色文字的方式
 2. 057 编写音乐musicpy
+
+### 🐍python迷惑行为
+
+一些没有用的奇怪写法和“寄巧”可能会被收录到迷惑行为中，偏向娱乐和整活。里面开的“同事、老师、同学、舍友”的玩笑请不要当真。同时，里面的一些危险代码操作也不要轻易模仿。
 
 
 

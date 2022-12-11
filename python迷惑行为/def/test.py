@@ -8,9 +8,10 @@
 # error
 def g(a):
     del g
+    # g(a)
     return a
 
-
+# 所有起到缩进作用的语句
 # g(g)(g)
 
 # a = [1, 2, 3]

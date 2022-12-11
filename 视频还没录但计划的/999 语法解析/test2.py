@@ -1,0 +1,42 @@
+import keyword
+
+for item in keyword.kwlist:
+    print(item, end="\t")
+
+docDic = {
+    'False': "假值，可以经过int转化为0",
+    'None': "空值",
+    'True': "真值，可以经过int()转化为1",
+    'and': "逻辑与",
+    'as': "起别名，通常和import,with 连用",
+    'assert': "断言语句",
+    'async': "异步",
+    'await': "异步",
+    'break': "跳出循环使用",
+    'class': "定义类",
+    'continue': "继续本轮循环",
+    'def': "定义函数",
+    'del': "删除对象",
+    'elif': "多年不写py之后最容易写错的关键字",
+    'else': "和if连用，也可以和for，while连用",
+    'except': "和try连用一起捉虫子",
+    'finally': "出事儿后的善后工作",
+    'for': "循环，也在列表推导式中出现",
+    'from': "引用时候使用",
+    'global': "在函数中声明某个变量是全局变量",
+    'if': "条件判断",
+    'import': "引入模块",
+    'in': "属于一种运算符",
+    'is': "内存地址是否相同",
+    'lambda': "缩句爱好者使用，但需要保证一行实现",
+    'nonlocal': "当出现函数嵌套的时候，你要在内层修改外层的变量",
+    'not': "逻辑非",
+    'or': "逻辑或",
+    'pass': "py特色",
+    'raise': "产生了错误",
+    'return': "函数的出口",
+    'try': "捉虫子专用",
+    'while': "发现死循环的时候通常是这里出了问题",
+    'with': "经常打开文件的时候使用，经典as f",
+    'yield': "生成器",
+}
