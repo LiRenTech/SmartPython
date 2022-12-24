@@ -1,0 +1,62 @@
+# 各个文件夹代表的视频
+
+> 这个文件由 [此脚本](./map.py) 自动生成，并且在每次提交时自动运行
+
+| 编号 | 标题 | 视频 |
+| - | - | - |
+| [000](./000%20巧用编辑器pyCharm) | 巧用编辑器pyCharm | [BV1pd4y1S7oe](https://www.bilibili.com/video/BV1pd4y1S7oe) |
+| [001](./001%20一行代码二维数组) | 一行代码二维数组 | [BV1V5411d7kb](https://www.bilibili.com/video/BV1V5411d7kb) |
+| [002](./002%20玩转推导式) | 玩转推导式 | [BV1qZ4y1h7in](https://www.bilibili.com/video/BV1qZ4y1h7in) |
+| [003](./003%20虚数妙用) | 虚数妙用 | [BV1oY4y167Qb](https://www.bilibili.com/video/BV1oY4y167Qb) |
+| [004](./004%20pass和点点点) | pass和点点点 | [BV1wZ4y1a7qi](https://www.bilibili.com/video/BV1wZ4y1a7qi) |
+| [005](./005%20函数注解) | 函数注解 | [BV1qS4y1h7ee](https://www.bilibili.com/video/BV1qS4y1h7ee) |
+| [006](./006%20help函数) | help函数 | [BV1i34y1h7HK](https://www.bilibili.com/video/BV1i34y1h7HK) |
+| [007](./007%20eval函数) | eval函数 | [BV1r5411d7y2](https://www.bilibili.com/video/BV1r5411d7y2) |
+| [008](./008%20多变量交换与拆包) | 多变量交换与拆包 | [BV12Y4y1b7b9](https://www.bilibili.com/video/BV12Y4y1b7b9) |
+| [009](./009%20装饰器的本质) | 装饰器的本质 | [BV1sT4y1679u](https://www.bilibili.com/video/BV1sT4y1679u) |
+| [010](./010%20极速递归) | 极速递归 | [BV1TB4y1y7Ck](https://www.bilibili.com/video/BV1TB4y1y7Ck) |
+| [011](./011%20三个实用位运算) | 三个实用位运算 | [BV14Y411c7v1](https://www.bilibili.com/video/BV14Y411c7v1) |
+| [012](./012%20元组小逗号) | 元组小逗号 | [BV1qa411J7h3](https://www.bilibili.com/video/BV1qa411J7h3) |
+| [013](./013%20Counter做元素统计) | Counter做元素统计 | [BV1yT4y1B7zq](https://www.bilibili.com/video/BV1yT4y1B7zq) |
+| [014](./014%20deque代替list) | deque代替list | [BV1NT4y1z7Km](https://www.bilibili.com/video/BV1NT4y1z7Km) |
+| [015](./015%20三目运算) | 三目运算 | [BV1ht4y1x7bL](https://www.bilibili.com/video/BV1ht4y1x7bL) |
+| [016](./016%20类型转化大全) | 类型转化大全 | [BV1Mr4y1t76B](https://www.bilibili.com/video/BV1Mr4y1t76B) |
+| [017](./017%20翻转序列) | 翻转序列 | [BV14t4y1s7GN](https://www.bilibili.com/video/BV14t4y1s7GN) |
+| [018](./018%20内置排序和自定义排序) | 内置排序和自定义排序 | [BV1234y1j7uX](https://www.bilibili.com/video/BV1234y1j7uX) |
+| [019](./019%20数字大总结) | 数字大总结 | [BV16g411R7Bo](https://www.bilibili.com/video/BV16g411R7Bo) |
+| [020](./020%20try%20catch完整写法) | try catch完整写法 | [BV1f5411D7Xg](https://www.bilibili.com/video/BV1f5411D7Xg) |
+| [021](./021%20跳出多层循环) | 跳出多层循环 | [BV1h34y1L7iR](https://www.bilibili.com/video/BV1h34y1L7iR) |
+| [022](./022%20赋值、复制、深拷贝) | 赋值、复制、深拷贝 | [BV1k5411Q7uf](https://www.bilibili.com/video/BV1k5411Q7uf) |
+| [023](./023%20无穷大的应用inf) | 无穷大的应用inf | [BV1MY4y157Vu](https://www.bilibili.com/video/BV1MY4y157Vu) |
+| [024](./024%20默认字典) | 默认字典 | [BV1294y117HM](https://www.bilibili.com/video/BV1294y117HM) |
+| [025](./025%20切片和自定义切片) | 切片和自定义切片 | [BV1ar4y1V7kL](https://www.bilibili.com/video/BV1ar4y1V7kL) |
+| [026](./026%20组合数combination) | 组合数combination | [BV1Va411L76e](https://www.bilibili.com/video/BV1Va411L76e) |
+| [027](./027%20两种打印彩色文字的方式) | 两种打印彩色文字的方式 | [BV1Kr4y1V7yi](https://www.bilibili.com/video/BV1Kr4y1V7yi) |
+| [028](./028%20product展平多重循环) | product展平多重循环 | [BV1zB4y1Q7zv](https://www.bilibili.com/video/BV1zB4y1Q7zv) |
+| [029](./029%20小顶堆heapq) | 小顶堆heapq | [BV15L4y1N7mc](https://www.bilibili.com/video/BV15L4y1N7mc) |
+| [030](./030%20用any、all对序列进行与或判断) | 用any、all对序列进行与或判断 | [BV1VB4y1q79m](https://www.bilibili.com/video/BV1VB4y1q79m) |
+| [031](./031%20高精度小数运算-有理数和Decimal) | 高精度小数运算-有理数和Decimal | [BV1d94y1y7xo](https://www.bilibili.com/video/BV1d94y1y7xo) |
+| [032](./032%20字符串f-string) | 字符串f-string | [BV1WY4y1E7xo](https://www.bilibili.com/video/BV1WY4y1E7xo) |
+| [033](./033%20字符串转义字符总结) | 字符串转义字符总结 | [BV1ba411Q7JB](https://www.bilibili.com/video/BV1ba411Q7JB) |
+| [034](./034%20字符串编码问题与编码转换) | 字符串编码问题与编码转换 | [BV1jY4y177WG](https://www.bilibili.com/video/BV1jY4y177WG) |
+| [036](./036%20面向对象-基本理论) | 面向对象-基本理论 | [BV1pW4y1S7LY](https://www.bilibili.com/video/BV1pW4y1S7LY) |
+| [037](./037%20面向对象-用dataclass简写类) | 面向对象-用dataclass简写类 | [BV1ZT411E75Z](https://www.bilibili.com/video/BV1ZT411E75Z) |
+| [038](./038%20面向对象-类方法类属性优化类) | 面向对象-类方法类属性优化类 | [BV1kU4y1D7su](https://www.bilibili.com/video/BV1kU4y1D7su) |
+| [040](./040%20面向对象-__name__,__class__) | 面向对象-..name..,..class.. | [BV1JG411s74V](https://www.bilibili.com/video/BV1JG411s74V) |
+| [042](./042%20组合数据类型只读化) | 组合数据类型只读化 | [BV1XV4y1n7QE](https://www.bilibili.com/video/BV1XV4y1n7QE) |
+| [043](./043%20面向对象-slots) | 面向对象-slots | [BV1vr4y1E7pa](https://www.bilibili.com/video/BV1vr4y1E7pa) |
+| [044](./044%20面向对象-静态方法封装类) | 面向对象-静态方法封装类 | [BV1XS4y1E7ae](https://www.bilibili.com/video/BV1XS4y1E7ae) |
+| [045](./045%20下划线保护类里面的资源) | 下划线保护类里面的资源 | [BV1Hr4y1E7Mg](https://www.bilibili.com/video/BV1Hr4y1E7Mg) |
+| [045](./045%20面向对象-更安全地保护属性) | 面向对象-更安全地保护属性 | [BV1Hr4y1E7Mg](https://www.bilibili.com/video/BV1Hr4y1E7Mg) |
+| [046](./046%20面向对象-python变C艹) | 面向对象-python变C艹 | [BV1PS4y1J7GG](https://www.bilibili.com/video/BV1PS4y1J7GG) |
+| [046](./046%20面向对象-类装饰器、装饰类的装饰器) | 面向对象-类装饰器、装饰类的装饰器 | [BV1PS4y1J7GG](https://www.bilibili.com/video/BV1PS4y1J7GG) |
+| [047](./047%20面向对象-魔术方法大总结) | 面向对象-魔术方法大总结 | [BV1b34y1H77x](https://www.bilibili.com/video/BV1b34y1H77x) |
+| [049](./049%20面向对象-继承问题) | 面向对象-继承问题 | [BV1j34y1H76A](https://www.bilibili.com/video/BV1j34y1H76A) |
+| [050](./050%20面向对象-抽象类) | 面向对象-抽象类 | [BV1ur4y1E7Di](https://www.bilibili.com/video/BV1ur4y1E7Di) |
+| [051](./051%20面向对象-获取多继承顺序) | 面向对象-获取多继承顺序 | [BV1Pa411Q78f](https://www.bilibili.com/video/BV1Pa411Q78f) |
+| [052](./052%20面向对象-enum枚举) | 面向对象-enum枚举 | [BV123411c7ib](https://www.bilibili.com/video/BV123411c7ib) |
+| [053](./053%20面向对象-类里怎么写自己的注解？) | 面向对象-类里怎么写自己的注解？ | [BV1ea411Q7M2](https://www.bilibili.com/video/BV1ea411Q7M2) |
+| [054](./054%20面向对象-用type元类写类) | 面向对象-用type元类写类 | [BV1iB4y1v7HC](https://www.bilibili.com/video/BV1iB4y1v7HC) |
+| [055](./055%20面向对象-用元类写出更离谱的类) | 面向对象-用元类写出更离谱的类 | [BV1jf4y1o7h9](https://www.bilibili.com/video/BV1jf4y1o7h9) |
+| [056](./056%20全排列) | 全排列 | [BV1MR4y197BW](https://www.bilibili.com/video/BV1MR4y197BW) |
+| [057](./057%20制作音乐musicpy) | 制作音乐musicpy | [BV1ug41187Ro](https://www.bilibili.com/video/BV1ug41187Ro) |
