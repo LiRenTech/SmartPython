@@ -5,7 +5,7 @@ on:
     branches: ["master"]
 
 permissions:
-  contents: read
+  contents: read|write
 
 jobs:
   build:
