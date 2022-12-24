@@ -21,11 +21,6 @@ def g():
 
 
 def main():
-    # t1 = threading.Thread(target=f)
-    # t2 = threading.Thread(target=g)
-    # t1.start()
-    # t2.start()
-
     return None
 
 

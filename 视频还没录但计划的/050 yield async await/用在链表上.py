@@ -4,6 +4,7 @@ class Node:
         self.next = None
 
     def __iter__(self):
+        # 生成器函数 return变成了yield
         node = self
         while node:
             yield node
@@ -35,10 +36,6 @@ def main():
     print(head)
     for item in head:
         print(item)
-
-    t: Tuple[int, int] = 1, 5
-    t: [int, int] = 1, 5
-    a, b = t
     
     ...
 
