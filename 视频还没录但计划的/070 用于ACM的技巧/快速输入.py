@@ -15,7 +15,7 @@ print(a)
 
 
 def main():
-    if sys.hexversion == 50924784:
+    if sys.hexversion == 50792688:  # 中键点进去不一定准确
         sys.stdin = open("input.txt")
     else:
         input = sys.stdin.readline
