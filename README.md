@@ -5,6 +5,7 @@
 python技巧🐍系列视频的所有代码，个别章节可能包含图片，ppt，导图文件。
 
 - 此系列的b站视频链接 https://space.bilibili.com/480804525/channel/collectiondetail?sid=413538
+- *（可通过 [map.md](./map.md) 找视频）*
 - 此项目的github地址：[Littlefean/SmartPython: python小技巧系列源代码——来自b站视频 (github.com)](https://github.com/Littlefean/SmartPython)
 - 此项目的gitee地址：https://gitee.com/littlefean/python-skill-bilibili
 
