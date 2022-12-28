@@ -20,10 +20,13 @@ jobs:
       - name: Run map.py
         run: |
           python map.py
-      - name: Commit and push
+      - name: Commit
         run: |
           git config --global user.email "me@example.com"
           git config --global user.name "Github Actions"
           git add map.md
-          git commit
-          git push -m
+          git commit -m "Actions: 更新map.md" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: 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
