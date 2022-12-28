@@ -1,9 +1,10 @@
 from os import listdir
 from requests import get
+from typing import Dict
 
 result = []
 format_ = "# 各个文件夹代表的视频\n\n> 这个文件由 [此脚本](./map.py) 自动生成，并且在每次提交时自动运行\n\n| 编号 | 标题 | 视频 |\n| - | - | - |\n{}\n"
-videos: dict[str, str] = {}  # example: { "050": "BVxxx" }
+videos: Dict[str, str] = {}  # example: { "050": "BVxxx" }
 
 pn = 1
 while True:

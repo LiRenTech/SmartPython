@@ -23,7 +23,7 @@ class Person:
 
 
 def toStr(self):
-    return f"({self.name}, {self.age})"
+    return f"({self.left}, {self.age})"
 
 
 Person.__str__ = toStr
@@ -50,9 +50,9 @@ def People(name: str, age: int):
     res.__class__.__setattr__ = setAtt
 
     res.age = age
-    res.name = name
+    res.left = name
 
-    res.__class__.__str__ = lambda self: f"{self.name}"
+    res.__class__.__str__ = lambda self: f"{self.left}"
     res.__class__.__repr__ = res.__str__
     return res
 

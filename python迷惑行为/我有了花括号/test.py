@@ -1,12 +1,10 @@
 from typing import Set
 import operator as op
 
-var = {}
+variables = {}
 
 
 class MyCode:
-    # def __init__(self):
-    #
     index = 0
 
     def __hash__(self):
@@ -18,14 +16,14 @@ class MyCode:
 
 
 class SetValue(MyCode):
-    """预处理语句"""
+    """赋值 a = 15 语句"""
 
     def __init__(self, name, value):
         self.name = name
         self.value = value
 
     def do(self):
-        var[self.name] = self.value
+        variables[self.name] = self.value
 
     def __str__(self):
         return "<SetValue>"
@@ -36,49 +34,57 @@ class GetValue(MyCode):
         self.name = name
 
     def do(self):
-        return var[self.name]
+        return variables[self.name]
 
 
 class ChangeValue(MyCode):
+    # i += 1
     def __init__(self, name, dv, op):
         self.name = name
         self.dv = dv
         self.op = op
 
     def do(self):
-        var[self.name] = self.op(var[self.name], self.dv)
+        variables[self.name] = self.op(variables[self.name], self.dv)
 
 
 class Op(MyCode):
-    def __init__(self, name, operator, value):
-        self.name = name
+    # i < 1000
+    def __init__(self, left, operator, value):
+        self.left = left
         self.operator = operator
         self.value = value
 
     def do(self):
-        return self.operator(var[self.name], self.value)
+        if isinstance(self.left, str):
+            return self.operator(variables[self.left], self.value)
+        elif isinstance(self.left, MyCode):
+            return self.operator(self.left.do(), self.value)
+        else:
+            return self.operator(self.left, self.value)
 
 
-class Judge(MyCode):
-    def __init__(self, name, value):
-        self.name = name
-        self.value = value
-
-    def do(self):
-        return var[self.name] == self.value
-
-    def __str__(self):
-        return "<Judge>"
+# class Judge(MyCode):
+#     def __init__(self, name, value):
+#         self.name = name
+#         self.value = value
+#
+#     def do(self):
+#         return variables[self.name] == self.value
+#
+#     def __str__(self):
+#         return "<Judge>"
 
 
 class If(MyCode):
     def __init__(self, *args, **kwargs):
-        if len(args) == 4:  # if (condition) {} else {}
-            self.condition: Judge = args[0]
+        if len(args) == 4:  # if ((condition) {} else {})
+            # if (() {})
+            self.condition = args[0]
             self.doCode: Set[MyCode] = args[1]
             self.elseDo: Set[MyCode] = args[3]
         elif len(args) == 2:
-            self.condition: Judge = args[0]
+            self.condition = args[0]
             self.doCode: Set[MyCode] = args[1]
             self.elseDo: Set[MyCode] = set()
 
@@ -94,22 +100,6 @@ class If(MyCode):
         return "<IF>"
 
 
-class Cmp(MyCode):
-
-    def __init__(self, left, operator, right):
-        self.left = left
-        self.operator = operator
-        self.right = right
-
-    def do(self):
-        leftVal, rightVal = self.left, self.right
-        if isinstance(self.left, MyCode):
-            leftVal = self.left.do()
-        if isinstance(self.right, MyCode):
-            rightVal = self.right.do()
-        return self.operator(leftVal, rightVal)
-
-
 class For(MyCode):
     def __init__(self, initContent, judgeContent, loopContent, loopCode):
         self.initContent = initContent
@@ -123,8 +113,6 @@ class For(MyCode):
             for code in self.loopCode:
                 code.do()
             self.loopContent.do()
-
-    ...
 
 
 class Print(MyCode):
@@ -147,58 +135,19 @@ class NameSpace:
             code.do()
 
 
-#
-# ns = NameSpace(
-#     SetValue("a", 1),
-#     If(
-#         Judge("a", 1),
-#         {
-#             For(SetValue("i", 0), Cmp("i", op.lt, 5), ChangeValue("i", 1, op.add), {
-#                 ChangeValue("a", 10, op.add)
-#             }),
-#         }
-#     ),
-# )
-
 # 打印出0~1000内左右的偶数
 ns = NameSpace(
-    For(SetValue("x", 0), Cmp(GetValue("x"), op.lt, 1000), ChangeValue("x", 1, op.add), {
-        If(Cmp(Op("x", op.mod, 2), op.eq, 0), {
-            Print(GetValue("x"))
+    For(SetValue("i", 0), Op(GetValue("i"), op.lt, 1000), ChangeValue("i", 1, op.add), {
+        # (i % 2) == 0
+        If((Op(Op("i", op.mod, 2), op.eq, 0)), {
+            Print(GetValue("i"))
         })
     })
 )
 
-
 def main():
-    from collections import Counter, defaultdict
-    words = """abc bca acb
-apple pplea
-cat""".split()
-
-    # {sortedStr: [words]}
-    d = defaultdict(list)
-    for word in words: d["".join(sorted(word))].append(word)
-    print(d)
-    # print(a, dict(a))
-    (print(arr) for arr in d.values() if len(arr) >= 3)
-
-
-    # print(Counter("".join(sorted(item)) for item in words).most_common(3))
-
-    # dic = defaultdict(int)
-    # for word in words:
-    #     dic["".join(sorted(word))] += 1
-
     ns.run()
-    # print(type(scope))
-    # for cc in scope:
-    #     print(cc)
-    #     print(type(cc))
-    #     print(dir(cc))
-    #     cc.do()
-    #
-    print(var)
+    # print(variables)
 
 
 if __name__ == "__main__":

@@ -13,7 +13,7 @@ class Deco:
         ...
 
     def __call__(self, obj):
-        obj.name = "newName" if self.flag else "oldName"
+        obj.left = "newName" if self.flag else "oldName"
         return obj
 
 
