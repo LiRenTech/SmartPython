@@ -24,6 +24,7 @@ jobs:
         run: |
           git config --global user.email "me@example.com"
           git config --global user.name "Github Actions"
+          export GIT_MERGE_AUTOEDIT=no
           git add map.md
           git commit
           git push
