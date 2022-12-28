@@ -5,7 +5,7 @@ on:
     branches: ["master"]
 
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,5 +22,7 @@ jobs:
           python map.py
       - name: Commit and push
         run: |
+          git config --global user.email "me@example.com"
+          git config --global user.name "Github Actions"
           git commit
           git push
