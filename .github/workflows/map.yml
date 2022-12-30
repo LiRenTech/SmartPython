@@ -9,24 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Python 3.9
+      - name: 安装python3.9
         uses: actions/setup-python@v3
         with:
           python-version: "3.9"
-      - name: Install dependencies
+      - name: 安装依赖
         run: |
           python -m pip install --upgrade pip
           pip install requests
-      - name: Run map.py
+      - name: 运行map.py
         run: |
           python map.py
-      - name: Commit
-        run: |
-          git config --global user.email "me@example.com"
-          git config --global user.name "Github Actions"
-          git add map.md
-          git commit -m "Actions: 更新map.md" -a
-      - name: Push
-        uses: ad-m/github-push-action@master
+      - name: 提交推送
+        uses: actions-js/push@master
         with:
           github_token: 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
