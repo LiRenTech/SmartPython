@@ -27,7 +27,8 @@ jobs:
       - name: 提交拉取
         run: |
           git commit -a -m "Actions: 更新map.md"
-          git pull origin master
+          # git pull origin master
+          git merge
       - name: 推送
         uses: actions-js/push@master
         with:
