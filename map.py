@@ -30,7 +30,7 @@ while True:
 
 print(videos)
 
-for dir in listdir():
+for dir in sorted(listdir(), key=lambda x: x[:3]):
     if dir[0].isdigit():
         result.append(f"| [{dir.split()[0]}](./{dir.replace(' ', '%20')}) | {dir[4:].replace('_', '.')} | [{videos[dir[:3]]}](https://www.bilibili.com/video/{videos[dir[:3]]}) |")
 

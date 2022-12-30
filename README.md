@@ -5,7 +5,7 @@
 python技巧🐍系列视频的所有代码，个别章节可能包含图片，ppt，导图文件。
 
 - 此系列的b站视频链接 https://space.bilibili.com/480804525/channel/collectiondetail?sid=413538
-- *（可通过 [map.md](./map.md) 找视频）*
+- *（可通过 [map.md](./map.md) 找视频），githubactions我给的token会在2023-3-30过期，别忘了*
 - 此项目的github地址：[Littlefean/SmartPython: python小技巧系列源代码——来自b站视频 (github.com)](https://github.com/Littlefean/SmartPython)
 - 此项目的gitee地址：https://gitee.com/littlefean/python-skill-bilibili
 
@@ -15,8 +15,8 @@ python技巧🐍系列视频的所有代码，个别章节可能包含图片，p
 
 ## 分类
 
-三位数的序号是up的视频中对应的标题序号。不太具有参考意义。只能表示up的更新时间顺序
-
+三位数的序号是up的视频中对应的标题序号，表示up的更新时间顺序，使用map.py更新map.md时要用到（对应文件夹和b站视频）
+ 
 ### 🐍语法基础向
 
 1. 003 虚数妙用
