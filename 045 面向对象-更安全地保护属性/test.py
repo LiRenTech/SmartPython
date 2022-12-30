@@ -23,9 +23,8 @@ class Student:
     @score.setter
     def score(self, value):
         print("检测方法运行了啦")
-        if type(value) not in (int, float):
-            ...
-        elif 0 <= value <= 100:
+        assert isinstance(value, (int, float))
+        if 0 <= value <= 100:
             self._score = value
 
     @score.deleter

@@ -1,0 +1,5 @@
+type
+isinstance(
+
+)
+issubclass()
