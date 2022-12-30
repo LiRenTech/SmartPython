@@ -24,12 +24,12 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-      - name: 提交拉取
+      - name: 合并分支
         run: |
-          git commit -a -m "Actions: 更新map.md"
-          # git pull origin master
           git merge
       - name: 推送
         uses: actions-js/push@master
         with:
           github_token: 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
+          message: "Actions: 更新map.md"
+          branch: master
