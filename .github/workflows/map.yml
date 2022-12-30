@@ -1,4 +1,4 @@
-name: Update map.md
+name: 更新map
 
 on:
   push:

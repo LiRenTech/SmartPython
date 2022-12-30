@@ -61,4 +61,3 @@
 | [056](./056%20全排列) | 全排列 | [BV1MR4y197BW](https://www.bilibili.com/video/BV1MR4y197BW) |
 | [057](./057%20制作音乐musicpy) | 制作音乐musicpy | [BV1ug41187Ro](https://www.bilibili.com/video/BV1ug41187Ro) |
 | [058](./058%20用import语句拆文件搞大项目) | 用import语句拆文件搞大项目 | [BV1Ge4y1e7uz](https://www.bilibili.com/video/BV1Ge4y1e7uz) |
-| [059](./059%20总结itertools里的骚东西) | 总结itertools里的骚东西 | [BV19V4y1F7if](https://www.bilibili.com/video/BV19V4y1F7if) |
