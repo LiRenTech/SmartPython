@@ -20,7 +20,11 @@ jobs:
       - name: 运行map.py
         run: |
           python map.py
-      - name: 提交推送
+      - name: 提交拉取
+        run: |
+          git commit -a -m "Actions: 更新map.md"
+          git pull origin master
+      - name: 推送
         uses: actions-js/push@master
         with:
           github_token: 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
