@@ -20,6 +20,10 @@ jobs:
       - name: 运行map.py
         run: |
           python map.py
+      - name: 设置git邮箱和姓名
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
       - name: 提交拉取
         run: |
           git commit -a -m "Actions: 更新map.md"
