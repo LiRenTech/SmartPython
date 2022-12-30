@@ -26,7 +26,7 @@ jobs:
           git config --global user.name "Github Actions"
           git add map.md
           git commit -m "Actions: 更新map.md" -a
-      - name: Push changes
+      - name: Push
         uses: ad-m/github-push-action@master
         with:
-          github_token: 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
+          github_token: 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
