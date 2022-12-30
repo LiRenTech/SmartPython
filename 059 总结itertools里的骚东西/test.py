@@ -4,6 +4,7 @@ arr = [1, 2, 3, 4, 5]
 
 # acc 前缀和
 acc = accumulate(arr)
+print(list(accumulate("ABCDEF")))
 print(list(acc))
 
 # chain 把各种序列串起来
@@ -71,3 +72,80 @@ print(list(starmap(pow, [(2, 5), (3, 2), (10, 3)])))  # [32, 9, 1000]
 # 和dropwhile相反
 
 print(list(zip_longest("ABCDEF", "1234", fillvalue="?")))
+
+# =========== 自带
+#
+# zip()
+# map()
+# filter()
+# from functools import reduce
+#
+# reduce()
+
+print("==" * 20)
+print(list(chain("abc", "def")))
+print(list(chain("abc", "def", [1, 2, 3])))
+print(list(chain("abc", "def")))
+print(list(chain.from_iterable(["abc", "BCD", "QWE"])))
+# chain from_iterable 只能拆一层
+
+# reduce(lambda a, b: a * b, [1, 3, 4, 5, 4, 3])
+
+from functools import reduce
+from operator import mul
+
+reduce(mul, [1, 3, 4, 5, 4, 3])
+n = 5
+print(reduce(lambda a, b: a * b, list(range(1, n + 1))))
+
+
+def f(n): return 1 if n == 0 else n * f(n - 1)
+
+
+print(list(pairwise("ABCDEF")))
+# starmap()
+
+
+# =============
+
+import itertools
+
+m = itertools.groupby([93, 15, 5, 4, 12, 24, 42], lambda x: x % 3 == 0)
+for k, v in m:
+    print(k, list(v))
+
+# =============
+
+g = (i for i in range(10))
+for n in islice(g, 5):
+    print(n)
+
+dropwhile(lambda x: x < 5, [1, 4, 6, 4, 1])
+takewhile(lambda x: x < 5, [1, 4, 6, 4, 1])
+
+for num in [134514] * 5:
+    print(num)
+
+for num in repeat(134514, 5):
+    print(num)
+
+# [1^2, 2^4, 3^6, 4^8 ...]
+# a = 1
+# b = 2
+# while True:
+#     print(a ** b)
+#     a += 1
+#     b += 2
+
+arr = [2, 0, 7, 7, 0, 5, 1, 5]
+for a, b in zip(arr, cycle([1, -1])):
+    print(a * b)  # 正负交替
+
+word1 = "abcdefghij"
+word2 = "134514"
+from operator import add
+print("".join(starmap(add, zip_longest(word1, word2, fillvalue=""))))
+
+# print(sum(count(1)))
+
+print(list(compress("ABCDEFG", [1, 1])))
