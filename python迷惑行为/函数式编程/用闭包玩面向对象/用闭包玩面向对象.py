@@ -4,7 +4,8 @@ def student(name, age):
         nonlocal age
         age += n
 
-    def say(): print(f"我叫{name}，我{age}岁")
+    def say():
+        print(f"我叫{name}，我{age}岁")
 
     def obj():
         ...  # 用一个空函数对象表示实例化出来的对象
@@ -23,3 +24,8 @@ s1.addAge(5)
 s1.say()
 s2.say()
 print(s1.say.__closure__)
+print(s1.addAge.__closure__)
+print(s2.say.__closure__)
+print(s2.addAge.__closure__)
+
+
