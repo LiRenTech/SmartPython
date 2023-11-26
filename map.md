@@ -48,8 +48,8 @@
 | [044](./044%20面向对象-静态方法封装类) | 面向对象-静态方法封装类 | [BV1XS4y1E7ae](https://www.bilibili.com/video/BV1XS4y1E7ae) |
 | [045](./045%20下划线保护类里面的资源) | 下划线保护类里面的资源 | [BV1Hr4y1E7Mg](https://www.bilibili.com/video/BV1Hr4y1E7Mg) |
 | [045](./045%20面向对象-更安全地保护属性) | 面向对象-更安全地保护属性 | [BV1Hr4y1E7Mg](https://www.bilibili.com/video/BV1Hr4y1E7Mg) |
-| [046](./046%20面向对象-python变C艹) | 面向对象-python变C艹 | [BV1PS4y1J7GG](https://www.bilibili.com/video/BV1PS4y1J7GG) |
 | [046](./046%20面向对象-类装饰器、装饰类的装饰器) | 面向对象-类装饰器、装饰类的装饰器 | [BV1PS4y1J7GG](https://www.bilibili.com/video/BV1PS4y1J7GG) |
+| [046](./046%20面向对象-python变C艹) | 面向对象-python变C艹 | [BV1PS4y1J7GG](https://www.bilibili.com/video/BV1PS4y1J7GG) |
 | [047](./047%20面向对象-魔术方法大总结) | 面向对象-魔术方法大总结 | [BV1b34y1H77x](https://www.bilibili.com/video/BV1b34y1H77x) |
 | [049](./049%20面向对象-继承问题) | 面向对象-继承问题 | [BV1j34y1H76A](https://www.bilibili.com/video/BV1j34y1H76A) |
 | [050](./050%20面向对象-抽象类) | 面向对象-抽象类 | [BV1ur4y1E7Di](https://www.bilibili.com/video/BV1ur4y1E7Di) |
