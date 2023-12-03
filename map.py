@@ -8,16 +8,13 @@ videos: Dict[str, str] = {}  # example: { "050": "BVxxx" }
 
 pn = 1
 while True:
+    # 2023-12-03 更新api
     resp = get(
-        "https://api.bilibili.com/x/space/arc/search",
-        params={
-            "mid": "480804525",  # uid
-            "ps": 50,  # 每页数量
-            "pn": pn  # 第几页
-        },
+        "https://api.bilibili.com/x/space/wbi/arc/search",
+        params={"mid": "480804525", "ps": 50, "pn": pn},  # uid  # 每页数量  # 第几页
         headers={
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"
-        }
+        },
     ).json()
     vlist = resp["data"]["list"]["vlist"]
     if len(vlist) > 0:
@@ -32,7 +29,9 @@ print(videos)
 
 for dir in sorted(listdir(), key=lambda x: x[:3]):
     if dir[0].isdigit():
-        result.append(f"| [{dir.split()[0]}](./{dir.replace(' ', '%20')}) | {dir[4:].replace('_', '.')} | [{videos[dir[:3]]}](https://www.bilibili.com/video/{videos[dir[:3]]}) |")
+        result.append(
+            f"| [{dir.split()[0]}](./{dir.replace(' ', '%20')}) | {dir[4:].replace('_', '.')} | [{videos[dir[:3]]}](https://www.bilibili.com/video/{videos[dir[:3]]}) |"
+        )
 
 print("write to map.md")
 
