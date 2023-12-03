@@ -5,3 +5,4 @@ test
 venv
 记录
 测试文件
+*.ignore
