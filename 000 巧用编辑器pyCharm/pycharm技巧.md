@@ -48,11 +48,11 @@
 
 20. 自动快速写代码：设置、编辑器、实时模板
 
-    先点加号
+先点加号
 
 ![快捷代码模板](https://github.com/HuaYuXiao/SmartPython/assets/117464811/96555389-33ad-4e57-b2a3-9b7822d898bb)
 
-    然后写这三个地方
+然后写这三个地方
     
 ![快捷代码模板 (2)](https://github.com/HuaYuXiao/SmartPython/assets/117464811/8051199c-78f6-402f-afa4-8618e94ed397)   
 
