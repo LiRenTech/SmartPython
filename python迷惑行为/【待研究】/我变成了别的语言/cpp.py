@@ -33,5 +33,5 @@ class Int(int):
 
 a = Int()
 for _ in range(1000):
-    a = +a
+    ++a
 print(a)
