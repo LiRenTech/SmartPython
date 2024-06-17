@@ -1,5 +1,7 @@
 import a
 
+print("-")
+
 
 def test():
     for i in range(100):
